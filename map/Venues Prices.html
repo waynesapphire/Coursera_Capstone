@@ -1,0 +1,2671 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_5e1c19c952d14b1490ee94455c07e23d {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5e1c19c952d14b1490ee94455c07e23d" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_5e1c19c952d14b1490ee94455c07e23d = L.map(
+                                  'map_5e1c19c952d14b1490ee94455c07e23d',
+                                  {center: [42.361145,-71.057083],
+                                  zoom: 13,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_2807193b144540a9b0825adf5620d2d0 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+        
+    
+
+            var marker_3fb2311984e347139464b271198a6eef = L.marker(
+                [42.3613,-71.057],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_1a90ef28b5e64964993f3b3a8917376a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3fb2311984e347139464b271198a6eef.setIcon(icon_1a90ef28b5e64964993f3b3a8917376a);
+            
+    
+            var popup_2ccaad54718046d38e0198964fa68839 = L.popup({maxWidth: '300'});
+
+            
+                var html_b801e3df372b4b7cab5d3ca9611b9fa0 = $('<div id="html_b801e3df372b4b7cab5d3ca9611b9fa0" style="width: 100.0%; height: 100.0%;">Saus, 33 Union Street, Near Faneuil Hall 02108</div>')[0];
+                popup_2ccaad54718046d38e0198964fa68839.setContent(html_b801e3df372b4b7cab5d3ca9611b9fa0);
+            
+
+            marker_3fb2311984e347139464b271198a6eef.bindPopup(popup_2ccaad54718046d38e0198964fa68839);
+
+            
+        
+    
+
+            var marker_0a266b48b51446759299ae7924ce0c2d = L.marker(
+                [42.3599,-71.0552],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_56b6c3bb06504269a659612295b9e267 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0a266b48b51446759299ae7924ce0c2d.setIcon(icon_56b6c3bb06504269a659612295b9e267);
+            
+    
+            var popup_01f26ba93fa94f51af4684bda0104bc5 = L.popup({maxWidth: '300'});
+
+            
+                var html_92a7469351ca42db9c4d9389b9830e30 = $('<div id="html_92a7469351ca42db9c4d9389b9830e30" style="width: 100.0%; height: 100.0%;">Anthem Kitchen + Bar, 101 S Market Street, Boston 02109</div>')[0];
+                popup_01f26ba93fa94f51af4684bda0104bc5.setContent(html_92a7469351ca42db9c4d9389b9830e30);
+            
+
+            marker_0a266b48b51446759299ae7924ce0c2d.bindPopup(popup_01f26ba93fa94f51af4684bda0104bc5);
+
+            
+        
+    
+
+            var marker_8f0ba42896214f8f96b7d5a77c0c81c7 = L.marker(
+                [42.36,-71.0562],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_5eaea06d34be466f96340e0ad5ea887e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8f0ba42896214f8f96b7d5a77c0c81c7.setIcon(icon_5eaea06d34be466f96340e0ad5ea887e);
+            
+    
+            var popup_c6ce3438526a4281a2d98c1c991a296f = L.popup({maxWidth: '300'});
+
+            
+                var html_41a7ab3f1caf4debab67370762f3267c = $('<div id="html_41a7ab3f1caf4debab67370762f3267c" style="width: 100.0%; height: 100.0%;">Gourmet India, 1 Faneuil Hall Square</div>')[0];
+                popup_c6ce3438526a4281a2d98c1c991a296f.setContent(html_41a7ab3f1caf4debab67370762f3267c);
+            
+
+            marker_8f0ba42896214f8f96b7d5a77c0c81c7.bindPopup(popup_c6ce3438526a4281a2d98c1c991a296f);
+
+            
+        
+    
+
+            var marker_77d55a0c8e154196b1cc3fc0538ef49f = L.marker(
+                [42.3634,-71.0557],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_f258764196cf454ebd03fb85ea3fdf51 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_77d55a0c8e154196b1cc3fc0538ef49f.setIcon(icon_f258764196cf454ebd03fb85ea3fdf51);
+            
+    
+            var popup_c35f9b67e09547679b3ec5118142a890 = L.popup({maxWidth: '300'});
+
+            
+                var html_a8d2d5ea6ff045e8b45d06e96c3b1cd3 = $('<div id="html_a8d2d5ea6ff045e8b45d06e96c3b1cd3" style="width: 100.0%; height: 100.0%;">Neptune Oyster, 63 Salem St, Boston 02113</div>')[0];
+                popup_c35f9b67e09547679b3ec5118142a890.setContent(html_a8d2d5ea6ff045e8b45d06e96c3b1cd3);
+            
+
+            marker_77d55a0c8e154196b1cc3fc0538ef49f.bindPopup(popup_c35f9b67e09547679b3ec5118142a890);
+
+            
+        
+    
+
+            var marker_a3d524745052421cafc7ac8c83943372 = L.marker(
+                [42.364,-71.0554],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_440022ac524248feaa1f9b2d3f3cc20a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a3d524745052421cafc7ac8c83943372.setIcon(icon_440022ac524248feaa1f9b2d3f3cc20a);
+            
+    
+            var popup_877720413c4d4d6bb2d511b9f19f1db6 = L.popup({maxWidth: '300'});
+
+            
+                var html_2b01d81dfb0f425bbc23c512aa2f654b = $('<div id="html_2b01d81dfb0f425bbc23c512aa2f654b" style="width: 100.0%; height: 100.0%;">Polcari&#39;s Coffee, 105 Salem St, Boston 02113</div>')[0];
+                popup_877720413c4d4d6bb2d511b9f19f1db6.setContent(html_2b01d81dfb0f425bbc23c512aa2f654b);
+            
+
+            marker_a3d524745052421cafc7ac8c83943372.bindPopup(popup_877720413c4d4d6bb2d511b9f19f1db6);
+
+            
+        
+    
+
+            var marker_6411d9f0cb644bf7878791101c400e84 = L.marker(
+                [42.3654,-71.0569],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_35462c64620a45bf89621fa6031cf28c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6411d9f0cb644bf7878791101c400e84.setIcon(icon_35462c64620a45bf89621fa6031cf28c);
+            
+    
+            var popup_d19a0cb4c58048539d1145fd061f9b06 = L.popup({maxWidth: '300'});
+
+            
+                var html_b2f59f45c7614b47adc858a63435fc43 = $('<div id="html_b2f59f45c7614b47adc858a63435fc43" style="width: 100.0%; height: 100.0%;">Regina Pizzeria, 11 1/2 Thacher St, Boston 02113</div>')[0];
+                popup_d19a0cb4c58048539d1145fd061f9b06.setContent(html_b2f59f45c7614b47adc858a63435fc43);
+            
+
+            marker_6411d9f0cb644bf7878791101c400e84.bindPopup(popup_d19a0cb4c58048539d1145fd061f9b06);
+
+            
+        
+    
+
+            var marker_c093506607a24a139890184108a67165 = L.marker(
+                [42.3638,-71.0544],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_83cda0f9e38d4d9484d8d1e5aa640426 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c093506607a24a139890184108a67165.setIcon(icon_83cda0f9e38d4d9484d8d1e5aa640426);
+            
+    
+            var popup_07bebebfadaa4833818a29f0e826069e = L.popup({maxWidth: '300'});
+
+            
+                var html_1caca8c5442d4ea1a7307597eb87845c = $('<div id="html_1caca8c5442d4ea1a7307597eb87845c" style="width: 100.0%; height: 100.0%;">Galleria Umberto, 289 Hanover Street, Boston 02113</div>')[0];
+                popup_07bebebfadaa4833818a29f0e826069e.setContent(html_1caca8c5442d4ea1a7307597eb87845c);
+            
+
+            marker_c093506607a24a139890184108a67165.bindPopup(popup_07bebebfadaa4833818a29f0e826069e);
+
+            
+        
+    
+
+            var marker_50be12db4f2c4fcd8046e6a25ab5635b = L.marker(
+                [42.3569,-71.0598],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_36f68201d2db4d9ebb68dd7c0041a62f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_50be12db4f2c4fcd8046e6a25ab5635b.setIcon(icon_36f68201d2db4d9ebb68dd7c0041a62f);
+            
+    
+            var popup_61abdf406248452a9f152ec3990a0b2a = L.popup({maxWidth: '300'});
+
+            
+                var html_5174217d13a44f5fbf67fb24f9fcf8e6 = $('<div id="html_5174217d13a44f5fbf67fb24f9fcf8e6" style="width: 100.0%; height: 100.0%;">Sam Lagrassa&#39;s, 44 Province Street, Boston 02108</div>')[0];
+                popup_61abdf406248452a9f152ec3990a0b2a.setContent(html_5174217d13a44f5fbf67fb24f9fcf8e6);
+            
+
+            marker_50be12db4f2c4fcd8046e6a25ab5635b.bindPopup(popup_61abdf406248452a9f152ec3990a0b2a);
+
+            
+        
+    
+
+            var marker_befd0aec4ac64f0b9e09c603841bfb4c = L.marker(
+                [42.356,-71.0531],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_8ca4646ad1f0409786da465ca180f707 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_befd0aec4ac64f0b9e09c603841bfb4c.setIcon(icon_8ca4646ad1f0409786da465ca180f707);
+            
+    
+            var popup_fbababea3025492aba625e3d853c4a5d = L.popup({maxWidth: '300'});
+
+            
+                var html_790eb3f968d1459b8b1c7e43dac691eb = $('<div id="html_790eb3f968d1459b8b1c7e43dac691eb" style="width: 100.0%; height: 100.0%;">Kane&#39;s Hand-Crafted Donuts, 90 Oliver Street, Boston 02110</div>')[0];
+                popup_fbababea3025492aba625e3d853c4a5d.setContent(html_790eb3f968d1459b8b1c7e43dac691eb);
+            
+
+            marker_befd0aec4ac64f0b9e09c603841bfb4c.bindPopup(popup_fbababea3025492aba625e3d853c4a5d);
+
+            
+        
+    
+
+            var marker_e1ea31eb7c1a4d52a0e4d15f5e88e5e7 = L.marker(
+                [42.3581,-71.0593],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_468dda15968541a1bae501a91f68ec14 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e1ea31eb7c1a4d52a0e4d15f5e88e5e7.setIcon(icon_468dda15968541a1bae501a91f68ec14);
+            
+    
+            var popup_29f7c3989b1f43b5b0a2596519a38682 = L.popup({maxWidth: '300'});
+
+            
+                var html_765e2ac61d7f4c65875012f6ac9cfc51 = $('<div id="html_765e2ac61d7f4c65875012f6ac9cfc51" style="width: 100.0%; height: 100.0%;">Ruth&#39;s Chris Steak House, 45 School Street 02108</div>')[0];
+                popup_29f7c3989b1f43b5b0a2596519a38682.setContent(html_765e2ac61d7f4c65875012f6ac9cfc51);
+            
+
+            marker_e1ea31eb7c1a4d52a0e4d15f5e88e5e7.bindPopup(popup_29f7c3989b1f43b5b0a2596519a38682);
+
+            
+        
+    
+
+            var marker_9406b3f71fb7403796b20966d96cae43 = L.marker(
+                [42.3652,-71.0555],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_da0e9d06ba7445e0bfbfe41d108747f0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9406b3f71fb7403796b20966d96cae43.setIcon(icon_da0e9d06ba7445e0bfbfe41d108747f0);
+            
+    
+            var popup_56a203895b914ab59295ef13e6117dfd = L.popup({maxWidth: '300'});
+
+            
+                var html_b7193aa52db143c6a90356710b2b670a = $('<div id="html_b7193aa52db143c6a90356710b2b670a" style="width: 100.0%; height: 100.0%;">Bova&#39;s Bakery, 134 Salem Street, Boston 02113</div>')[0];
+                popup_56a203895b914ab59295ef13e6117dfd.setContent(html_b7193aa52db143c6a90356710b2b670a);
+            
+
+            marker_9406b3f71fb7403796b20966d96cae43.bindPopup(popup_56a203895b914ab59295ef13e6117dfd);
+
+            
+        
+    
+
+            var marker_7152f3992b944ebabdb46a28feacba51 = L.marker(
+                [42.3642,-71.0543],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_5379cb3600d848a789cdcc8340f69e4c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7152f3992b944ebabdb46a28feacba51.setIcon(icon_5379cb3600d848a789cdcc8340f69e4c);
+            
+    
+            var popup_7ef8fbe4bbc64662b7d9a7ec378b2321 = L.popup({maxWidth: '300'});
+
+            
+                var html_bdc24cb66c974055a07ddfd5bfba366c = $('<div id="html_bdc24cb66c974055a07ddfd5bfba366c" style="width: 100.0%; height: 100.0%;">Mike&#39;s Pastry, 300 Hanover Street, Boston 02113</div>')[0];
+                popup_7ef8fbe4bbc64662b7d9a7ec378b2321.setContent(html_bdc24cb66c974055a07ddfd5bfba366c);
+            
+
+            marker_7152f3992b944ebabdb46a28feacba51.bindPopup(popup_7ef8fbe4bbc64662b7d9a7ec378b2321);
+
+            
+        
+    
+
+            var marker_e1154e4b74274e0ca1da44da65d1b800 = L.marker(
+                [42.355,-71.0509],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_f4f1f9b3fc90487596ef3d8979f4b0aa = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e1154e4b74274e0ca1da44da65d1b800.setIcon(icon_f4f1f9b3fc90487596ef3d8979f4b0aa);
+            
+    
+            var popup_bc86b65080ef422ea1446d38d7460e8b = L.popup({maxWidth: '300'});
+
+            
+                var html_1efa468207d646799b796584b48126b6 = $('<div id="html_1efa468207d646799b796584b48126b6" style="width: 100.0%; height: 100.0%;">James Hook &amp; Co, 440, Atlantic Ave, Financial District, Boston 02210</div>')[0];
+                popup_bc86b65080ef422ea1446d38d7460e8b.setContent(html_1efa468207d646799b796584b48126b6);
+            
+
+            marker_e1154e4b74274e0ca1da44da65d1b800.bindPopup(popup_bc86b65080ef422ea1446d38d7460e8b);
+
+            
+        
+    
+
+            var marker_886b1d8ccafc481987852dca496442df = L.marker(
+                [42.3632,-71.0568],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_67dbf5fd74204f49a18a3e6c2cf100cf = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_886b1d8ccafc481987852dca496442df.setIcon(icon_67dbf5fd74204f49a18a3e6c2cf100cf);
+            
+    
+            var popup_ccf842dd3d4e4fe8a185552529ec6e5e = L.popup({maxWidth: '300'});
+
+            
+                var html_8c00beb07bce4df7918fe0934f90e429 = $('<div id="html_8c00beb07bce4df7918fe0934f90e429" style="width: 100.0%; height: 100.0%;">Maria&#39;s Pastry Shop, 46 Cross Street, Boston 02113</div>')[0];
+                popup_ccf842dd3d4e4fe8a185552529ec6e5e.setContent(html_8c00beb07bce4df7918fe0934f90e429);
+            
+
+            marker_886b1d8ccafc481987852dca496442df.bindPopup(popup_ccf842dd3d4e4fe8a185552529ec6e5e);
+
+            
+        
+    
+
+            var marker_d3b577ba9eb94816bd520d6f5647ede0 = L.marker(
+                [42.3643,-71.0596],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_5f6728b9b7cf4ab596baa423c560c2f6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d3b577ba9eb94816bd520d6f5647ede0.setIcon(icon_5f6728b9b7cf4ab596baa423c560c2f6);
+            
+    
+            var popup_438ce5f2206c4a4aab7784cf2497c20b = L.popup({maxWidth: '300'});
+
+            
+                var html_c483a7c24cd2416da2c401f4177de417 = $('<div id="html_c483a7c24cd2416da2c401f4177de417" style="width: 100.0%; height: 100.0%;">Cafe Rustico, 85 Canal St, Boston 02114</div>')[0];
+                popup_438ce5f2206c4a4aab7784cf2497c20b.setContent(html_c483a7c24cd2416da2c401f4177de417);
+            
+
+            marker_d3b577ba9eb94816bd520d6f5647ede0.bindPopup(popup_438ce5f2206c4a4aab7784cf2497c20b);
+
+            
+        
+    
+
+            var marker_f571c50f87074ad998047be2541d8e91 = L.marker(
+                [42.366,-71.0529],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_2f861a9b3fea439783de04a594ba4975 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f571c50f87074ad998047be2541d8e91.setIcon(icon_2f861a9b3fea439783de04a594ba4975);
+            
+    
+            var popup_3fdff856e1ee4d69b85c3a9412155446 = L.popup({maxWidth: '300'});
+
+            
+                var html_fcc082096e9c49ba8c2b96f8882879b7 = $('<div id="html_fcc082096e9c49ba8c2b96f8882879b7" style="width: 100.0%; height: 100.0%;">My Cousin&#39;s Place, 396 Hanover Street 02113</div>')[0];
+                popup_3fdff856e1ee4d69b85c3a9412155446.setContent(html_fcc082096e9c49ba8c2b96f8882879b7);
+            
+
+            marker_f571c50f87074ad998047be2541d8e91.bindPopup(popup_3fdff856e1ee4d69b85c3a9412155446);
+
+            
+        
+    
+
+            var marker_ef4af487d3844649a08d565f9ca51662 = L.marker(
+                [42.3537,-71.0623],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_12503ff49d3c4a408624953f28068977 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ef4af487d3844649a08d565f9ca51662.setIcon(icon_12503ff49d3c4a408624953f28068977);
+            
+    
+            var popup_58348ab4f3a9470782a782dfe40d0f5e = L.popup({maxWidth: '300'});
+
+            
+                var html_4df8d19111dc4b07ae69877521d34956 = $('<div id="html_4df8d19111dc4b07ae69877521d34956" style="width: 100.0%; height: 100.0%;">Salvatore&#39;s, 545 Washington Street, Boston 02111</div>')[0];
+                popup_58348ab4f3a9470782a782dfe40d0f5e.setContent(html_4df8d19111dc4b07ae69877521d34956);
+            
+
+            marker_ef4af487d3844649a08d565f9ca51662.bindPopup(popup_58348ab4f3a9470782a782dfe40d0f5e);
+
+            
+        
+    
+
+            var marker_884ab515f2bf4371a87238fccbb025bb = L.marker(
+                [42.3531,-71.0627],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_a79a0c82d0ec46bfb7ff38ebc31fa29d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_884ab515f2bf4371a87238fccbb025bb.setIcon(icon_a79a0c82d0ec46bfb7ff38ebc31fa29d);
+            
+    
+            var popup_60e2586dfcf34d928fbf59eee6ff30e4 = L.popup({maxWidth: '300'});
+
+            
+                var html_265503caa3d9440493d7f116d8123575 = $('<div id="html_265503caa3d9440493d7f116d8123575" style="width: 100.0%; height: 100.0%;">Blu Restaurant, 4 Avery Street, Boston 02111</div>')[0];
+                popup_60e2586dfcf34d928fbf59eee6ff30e4.setContent(html_265503caa3d9440493d7f116d8123575);
+            
+
+            marker_884ab515f2bf4371a87238fccbb025bb.bindPopup(popup_60e2586dfcf34d928fbf59eee6ff30e4);
+
+            
+        
+    
+
+            var marker_5254ef1a8ca849b593fd8fd492d4f95b = L.marker(
+                [42.358,-71.0707],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_e4ac54c373cc4fa189fe70bcf2a10728 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5254ef1a8ca849b593fd8fd492d4f95b.setIcon(icon_e4ac54c373cc4fa189fe70bcf2a10728);
+            
+    
+            var popup_0ce02986b8914666b4355a1c7e93e17a = L.popup({maxWidth: '300'});
+
+            
+                var html_a53b45d6e99c4d98880542a9bc2b1c40 = $('<div id="html_a53b45d6e99c4d98880542a9bc2b1c40" style="width: 100.0%; height: 100.0%;">Tatte Bakery and Cafe, 70 Charles St, Boston 02114</div>')[0];
+                popup_0ce02986b8914666b4355a1c7e93e17a.setContent(html_a53b45d6e99c4d98880542a9bc2b1c40);
+            
+
+            marker_5254ef1a8ca849b593fd8fd492d4f95b.bindPopup(popup_0ce02986b8914666b4355a1c7e93e17a);
+
+            
+        
+    
+
+            var marker_f5b5bfa53297467db6ee9dcfcdbc16e4 = L.marker(
+                [42.3602,-71.071],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_6e5c9e2396214dcbba19d29d40ac850b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f5b5bfa53297467db6ee9dcfcdbc16e4.setIcon(icon_6e5c9e2396214dcbba19d29d40ac850b);
+            
+    
+            var popup_6e1760f46ec8401da24edd05b8779c59 = L.popup({maxWidth: '300'});
+
+            
+                var html_03d6aeeb951d4743b960d13f7e45fd54 = $('<div id="html_03d6aeeb951d4743b960d13f7e45fd54" style="width: 100.0%; height: 100.0%;">J.P. Licks, 150 Charles St, Boston 02114</div>')[0];
+                popup_6e1760f46ec8401da24edd05b8779c59.setContent(html_03d6aeeb951d4743b960d13f7e45fd54);
+            
+
+            marker_f5b5bfa53297467db6ee9dcfcdbc16e4.bindPopup(popup_6e1760f46ec8401da24edd05b8779c59);
+
+            
+        
+    
+
+            var marker_b2b0b4f992914d188404b0a9884f3302 = L.marker(
+                [42.3655,-71.0585],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_af7e1f52c4d341ac917e61a76ab47f46 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b2b0b4f992914d188404b0a9884f3302.setIcon(icon_af7e1f52c4d341ac917e61a76ab47f46);
+            
+    
+            var popup_c4f1f710279a4653bcb2ada483260e2a = L.popup({maxWidth: '300'});
+
+            
+                var html_9418167f9680459ca7c0773d72506e33 = $('<div id="html_9418167f9680459ca7c0773d72506e33" style="width: 100.0%; height: 100.0%;">Ward 8, 90 North. Washington Street. 02114</div>')[0];
+                popup_c4f1f710279a4653bcb2ada483260e2a.setContent(html_9418167f9680459ca7c0773d72506e33);
+            
+
+            marker_b2b0b4f992914d188404b0a9884f3302.bindPopup(popup_c4f1f710279a4653bcb2ada483260e2a);
+
+            
+        
+    
+
+            var marker_d155accb9cb24eed985ea1a4cc36f2d1 = L.marker(
+                [42.351,-71.0631],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_af7c6aab895b4fdd9c2a36e492282d57 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d155accb9cb24eed985ea1a4cc36f2d1.setIcon(icon_af7c6aab895b4fdd9c2a36e492282d57);
+            
+    
+            var popup_807473d20f7e479bb142d141a8b56951 = L.popup({maxWidth: '300'});
+
+            
+                var html_a00ebfc15784434cbab9f0c28452d164 = $('<div id="html_a00ebfc15784434cbab9f0c28452d164" style="width: 100.0%; height: 100.0%;">Boston Kitchen Pizza, 1 Stuart Street, Boston 02116</div>')[0];
+                popup_807473d20f7e479bb142d141a8b56951.setContent(html_a00ebfc15784434cbab9f0c28452d164);
+            
+
+            marker_d155accb9cb24eed985ea1a4cc36f2d1.bindPopup(popup_807473d20f7e479bb142d141a8b56951);
+
+            
+        
+    
+
+            var marker_93f74ca57b3940a182e2d34287dd5106 = L.marker(
+                [42.3508,-71.0605],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_e9e7382be3bb45ebb44ba9c08847904e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_93f74ca57b3940a182e2d34287dd5106.setIcon(icon_e9e7382be3bb45ebb44ba9c08847904e);
+            
+    
+            var popup_d39e2a1e8dbb46ceb40a8b94fd550c40 = L.popup({maxWidth: '300'});
+
+            
+                var html_1b3679c6880849a98a1c59d89d256f6f = $('<div id="html_1b3679c6880849a98a1c59d89d256f6f" style="width: 100.0%; height: 100.0%;">Shabu-Zen, 16 Tyler Street, Boston 02111</div>')[0];
+                popup_d39e2a1e8dbb46ceb40a8b94fd550c40.setContent(html_1b3679c6880849a98a1c59d89d256f6f);
+            
+
+            marker_93f74ca57b3940a182e2d34287dd5106.bindPopup(popup_d39e2a1e8dbb46ceb40a8b94fd550c40);
+
+            
+        
+    
+
+            var marker_f1544661cb5946b9bcc408c15e8f0c0a = L.marker(
+                [42.3523,-71.0687],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_fe71471776594d2ab24bcec5580ee681 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f1544661cb5946b9bcc408c15e8f0c0a.setIcon(icon_fe71471776594d2ab24bcec5580ee681);
+            
+    
+            var popup_ccdc85b96dcc4ff293551e36f4b9d07d = L.popup({maxWidth: '300'});
+
+            
+                var html_a596346539b64bacb2a8166b065e2eda = $('<div id="html_a596346539b64bacb2a8166b065e2eda" style="width: 100.0%; height: 100.0%;">Sweetgreen, 210 Boylston Street, Boston 02116</div>')[0];
+                popup_ccdc85b96dcc4ff293551e36f4b9d07d.setContent(html_a596346539b64bacb2a8166b065e2eda);
+            
+
+            marker_f1544661cb5946b9bcc408c15e8f0c0a.bindPopup(popup_ccdc85b96dcc4ff293551e36f4b9d07d);
+
+            
+        
+    
+
+            var marker_46775063c2ad440d82e6efaa8be9d411 = L.marker(
+                [42.3513,-71.0671],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_bb9a6572d1444c3ba5d8f4c674f34184 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_46775063c2ad440d82e6efaa8be9d411.setIcon(icon_bb9a6572d1444c3ba5d8f4c674f34184);
+            
+    
+            var popup_195eea6ee4c24b7f9e19420a429fde4c = L.popup({maxWidth: '300'});
+
+            
+                var html_9ae4f37edcdd4d6d872ae28f6436f968 = $('<div id="html_9ae4f37edcdd4d6d872ae28f6436f968" style="width: 100.0%; height: 100.0%;">Ostra, 1 Charles Street South 02116</div>')[0];
+                popup_195eea6ee4c24b7f9e19420a429fde4c.setContent(html_9ae4f37edcdd4d6d872ae28f6436f968);
+            
+
+            marker_46775063c2ad440d82e6efaa8be9d411.bindPopup(popup_195eea6ee4c24b7f9e19420a429fde4c);
+
+            
+        
+    
+
+            var marker_4d7be637a6fe45c0b9a531701b7dca7a = L.marker(
+                [42.3512,-71.0487],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_d937a37f4b344ad29883ac93b7898939 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4d7be637a6fe45c0b9a531701b7dca7a.setIcon(icon_d937a37f4b344ad29883ac93b7898939);
+            
+    
+            var popup_3fc3f6cdbce749e79ee3051067d38c81 = L.popup({maxWidth: '300'});
+
+            
+                var html_65fc1bacd4d8464d982f4b42c3365b85 = $('<div id="html_65fc1bacd4d8464d982f4b42c3365b85" style="width: 100.0%; height: 100.0%;">Flour Bakery + Cafe, 12 Farnsworth Street, Boston 02210</div>')[0];
+                popup_3fc3f6cdbce749e79ee3051067d38c81.setContent(html_65fc1bacd4d8464d982f4b42c3365b85);
+            
+
+            marker_4d7be637a6fe45c0b9a531701b7dca7a.bindPopup(popup_3fc3f6cdbce749e79ee3051067d38c81);
+
+            
+        
+    
+
+            var marker_2359d7c67c2f400096ab3e36de9f05df = L.marker(
+                [42.3523,-71.0686],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_10ef0e3873094afbae735b075be70891 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2359d7c67c2f400096ab3e36de9f05df.setIcon(icon_10ef0e3873094afbae735b075be70891);
+            
+    
+            var popup_17f06d7b54a64d08a1160752243e2e48 = L.popup({maxWidth: '300'});
+
+            
+                var html_58fed927c868432f948e82c2066caea2 = $('<div id="html_58fed927c868432f948e82c2066caea2" style="width: 100.0%; height: 100.0%;">Bristol Restaurant and Bar, 200 Boylston Street, Boston 02116</div>')[0];
+                popup_17f06d7b54a64d08a1160752243e2e48.setContent(html_58fed927c868432f948e82c2066caea2);
+            
+
+            marker_2359d7c67c2f400096ab3e36de9f05df.bindPopup(popup_17f06d7b54a64d08a1160752243e2e48);
+
+            
+        
+    
+
+            var marker_4f5ae64e713948d887a481b64491c347 = L.marker(
+                [42.3496,-71.0473],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_48302b2ea878479694b8124f9bf18a0b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4f5ae64e713948d887a481b64491c347.setIcon(icon_48302b2ea878479694b8124f9bf18a0b);
+            
+    
+            var popup_67213fea4f0b41f0a7eec19701a23d1c = L.popup({maxWidth: '300'});
+
+            
+                var html_74c3c422761a4f5abbd8f047ba2e90df = $('<div id="html_74c3c422761a4f5abbd8f047ba2e90df" style="width: 100.0%; height: 100.0%;">Row 34, 383 Congress Street, Boston 02210</div>')[0];
+                popup_67213fea4f0b41f0a7eec19701a23d1c.setContent(html_74c3c422761a4f5abbd8f047ba2e90df);
+            
+
+            marker_4f5ae64e713948d887a481b64491c347.bindPopup(popup_67213fea4f0b41f0a7eec19701a23d1c);
+
+            
+        
+    
+
+            var marker_66fd0c13268b4052aa18c226676e2a4e = L.marker(
+                [42.3502,-71.0605],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_73a06b4ff35745c8929580623ea7cc1d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_66fd0c13268b4052aa18c226676e2a4e.setIcon(icon_73a06b4ff35745c8929580623ea7cc1d);
+            
+    
+            var popup_194f2c43e998411dae0c73ec6e3f338d = L.popup({maxWidth: '300'});
+
+            
+                var html_36fc780f8cdd4bcf914c09b99934e03b = $('<div id="html_36fc780f8cdd4bcf914c09b99934e03b" style="width: 100.0%; height: 100.0%;">Crave Mad for Chicken, 75 Kneeland Street 02111</div>')[0];
+                popup_194f2c43e998411dae0c73ec6e3f338d.setContent(html_36fc780f8cdd4bcf914c09b99934e03b);
+            
+
+            marker_66fd0c13268b4052aa18c226676e2a4e.bindPopup(popup_194f2c43e998411dae0c73ec6e3f338d);
+
+            
+        
+    
+
+            var marker_705864087d3d41d1b72e619bac3995b3 = L.marker(
+                [42.3572,-71.0702],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_87be5fbe955c4593b214bcbb316d7efa = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_705864087d3d41d1b72e619bac3995b3.setIcon(icon_87be5fbe955c4593b214bcbb316d7efa);
+            
+    
+            var popup_3aea527f652541c2a745b84fd68ee315 = L.popup({maxWidth: '300'});
+
+            
+                var html_e0b0eb2eeede4055b214b36035c9ab16 = $('<div id="html_e0b0eb2eeede4055b214b36035c9ab16" style="width: 100.0%; height: 100.0%;">Figs, 42 Charles Street, Boston 02114</div>')[0];
+                popup_3aea527f652541c2a745b84fd68ee315.setContent(html_e0b0eb2eeede4055b214b36035c9ab16);
+            
+
+            marker_705864087d3d41d1b72e619bac3995b3.bindPopup(popup_3aea527f652541c2a745b84fd68ee315);
+
+            
+        
+    
+
+            var marker_e003161848d34aea9740ce551c4c9015 = L.marker(
+                [42.3485,-71.0679],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_0f4409d823d848399a949053a5103ba8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e003161848d34aea9740ce551c4c9015.setIcon(icon_0f4409d823d848399a949053a5103ba8);
+            
+    
+            var popup_3483d7a2e0e0437b8514ce3328eb3b03 = L.popup({maxWidth: '300'});
+
+            
+                var html_031efed224ba46ff832bdb2ab2dc4cb9 = $('<div id="html_031efed224ba46ff832bdb2ab2dc4cb9" style="width: 100.0%; height: 100.0%;">Mike &amp; Patty&#39;s, 12 Church Street 02116</div>')[0];
+                popup_3483d7a2e0e0437b8514ce3328eb3b03.setContent(html_031efed224ba46ff832bdb2ab2dc4cb9);
+            
+
+            marker_e003161848d34aea9740ce551c4c9015.bindPopup(popup_3483d7a2e0e0437b8514ce3328eb3b03);
+
+            
+        
+    
+
+            var marker_da287ae77b5d443ebf4a7f565e139ff1 = L.marker(
+                [42.3768,-71.0566],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_a0231256eb2040298af0d6d48a8f08ce = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_da287ae77b5d443ebf4a7f565e139ff1.setIcon(icon_a0231256eb2040298af0d6d48a8f08ce);
+            
+    
+            var popup_38a5486a811d4387bc55483305c5c5ca = L.popup({maxWidth: '300'});
+
+            
+                var html_924ca1efd60b4bd7a54e375dc9df3950 = $('<div id="html_924ca1efd60b4bd7a54e375dc9df3950" style="width: 100.0%; height: 100.0%;">Brewer&#39;s Fork, 7 Moulton St, Boston 02129</div>')[0];
+                popup_38a5486a811d4387bc55483305c5c5ca.setContent(html_924ca1efd60b4bd7a54e375dc9df3950);
+            
+
+            marker_da287ae77b5d443ebf4a7f565e139ff1.bindPopup(popup_38a5486a811d4387bc55483305c5c5ca);
+
+            
+        
+    
+
+            var marker_07b385757fd448bc9e325fdbbb02f22b = L.marker(
+                [42.3744,-71.063],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_8937ddafc2fc406396444a9dd15f1d7f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_07b385757fd448bc9e325fdbbb02f22b.setIcon(icon_8937ddafc2fc406396444a9dd15f1d7f);
+            
+    
+            var popup_ce0675ad0acc43cbbdc3c70575e5fba3 = L.popup({maxWidth: '300'});
+
+            
+                var html_8079df857efe4eb9b544e89a3f33d316 = $('<div id="html_8079df857efe4eb9b544e89a3f33d316" style="width: 100.0%; height: 100.0%;">The Warren Tavern, 2 Pleasant Street 02129</div>')[0];
+                popup_ce0675ad0acc43cbbdc3c70575e5fba3.setContent(html_8079df857efe4eb9b544e89a3f33d316);
+            
+
+            marker_07b385757fd448bc9e325fdbbb02f22b.bindPopup(popup_ce0675ad0acc43cbbdc3c70575e5fba3);
+
+            
+        
+    
+
+            var marker_dd100a246f534c7fa0f1480d7b5a5bb0 = L.marker(
+                [42.352,-71.0697],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_5d02aba9763147ccb249f8c02b665612 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dd100a246f534c7fa0f1480d7b5a5bb0.setIcon(icon_5d02aba9763147ccb249f8c02b665612);
+            
+    
+            var popup_188142b7524e4c34b10cc88c2a0b212f = L.popup({maxWidth: '300'});
+
+            
+                var html_7e10effda7694d8ea35441efc82d2620 = $('<div id="html_7e10effda7694d8ea35441efc82d2620" style="width: 100.0%; height: 100.0%;">Bistro du Midi, 272 Boylston Street 02116</div>')[0];
+                popup_188142b7524e4c34b10cc88c2a0b212f.setContent(html_7e10effda7694d8ea35441efc82d2620);
+            
+
+            marker_dd100a246f534c7fa0f1480d7b5a5bb0.bindPopup(popup_188142b7524e4c34b10cc88c2a0b212f);
+
+            
+        
+    
+
+            var marker_5e2f8e64dc734e97b2c8b4267912f51c = L.marker(
+                [42.3511,-71.045],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_d2da81a0ce874a68942c482da774bbf2 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5e2f8e64dc734e97b2c8b4267912f51c.setIcon(icon_d2da81a0ce874a68942c482da774bbf2);
+            
+    
+            var popup_475ab8a68838431a881645408b3c8e14 = L.popup({maxWidth: '300'});
+
+            
+                var html_508a5cab60ec47568ce603f77b4289b3 = $('<div id="html_508a5cab60ec47568ce603f77b4289b3" style="width: 100.0%; height: 100.0%;">by CHLOE. Boston Seaport, 107 Seaport Boulevard 02210</div>')[0];
+                popup_475ab8a68838431a881645408b3c8e14.setContent(html_508a5cab60ec47568ce603f77b4289b3);
+            
+
+            marker_5e2f8e64dc734e97b2c8b4267912f51c.bindPopup(popup_475ab8a68838431a881645408b3c8e14);
+
+            
+        
+    
+
+            var marker_f0e02daba95b4979b6c7010075eedfda = L.marker(
+                [42.3519,-71.075],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_ca69305889e5485e89a135c1281e6bcc = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f0e02daba95b4979b6c7010075eedfda.setIcon(icon_ca69305889e5485e89a135c1281e6bcc);
+            
+    
+            var popup_2bcf4113154047999155434544edfc46 = L.popup({maxWidth: '300'});
+
+            
+                var html_203bc8970b4d4063aab28928f643530d = $('<div id="html_203bc8970b4d4063aab28928f643530d" style="width: 100.0%; height: 100.0%;">Thinking Cup, 85 Newbury Street, Boston 02116</div>')[0];
+                popup_2bcf4113154047999155434544edfc46.setContent(html_203bc8970b4d4063aab28928f643530d);
+            
+
+            marker_f0e02daba95b4979b6c7010075eedfda.bindPopup(popup_2bcf4113154047999155434544edfc46);
+
+            
+        
+    
+
+            var marker_ffcbf9a5c72940dfa3487791172fb519 = L.marker(
+                [42.3518,-71.0748],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_adb2c27c77e54d9ba644a68cddda1c00 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ffcbf9a5c72940dfa3487791172fb519.setIcon(icon_adb2c27c77e54d9ba644a68cddda1c00);
+            
+    
+            var popup_b21a2c3fbc97422f8194d77d2f72c7d1 = L.popup({maxWidth: '300'});
+
+            
+                var html_420bcbeccd5a42ea96724a2a462f06a2 = $('<div id="html_420bcbeccd5a42ea96724a2a462f06a2" style="width: 100.0%; height: 100.0%;">Georgetown Cupcake, 83 Newbury Street, Boston 02116</div>')[0];
+                popup_b21a2c3fbc97422f8194d77d2f72c7d1.setContent(html_420bcbeccd5a42ea96724a2a462f06a2);
+            
+
+            marker_ffcbf9a5c72940dfa3487791172fb519.bindPopup(popup_b21a2c3fbc97422f8194d77d2f72c7d1);
+
+            
+        
+    
+
+            var marker_313c8f2e371344d0aec67160df536caf = L.marker(
+                [42.3511,-71.0755],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_a01766c374e14b598bcbb253bde7bf4d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_313c8f2e371344d0aec67160df536caf.setIcon(icon_a01766c374e14b598bcbb253bde7bf4d);
+            
+    
+            var popup_83d8dd2fe76b490797075db206da89cc = L.popup({maxWidth: '300'});
+
+            
+                var html_106daf9d8b434ae6a441fc9f2cd5f3ed = $('<div id="html_106daf9d8b434ae6a441fc9f2cd5f3ed" style="width: 100.0%; height: 100.0%;">LA Burdick, 220 Clarendon Street, Boston 02116</div>')[0];
+                popup_83d8dd2fe76b490797075db206da89cc.setContent(html_106daf9d8b434ae6a441fc9f2cd5f3ed);
+            
+
+            marker_313c8f2e371344d0aec67160df536caf.bindPopup(popup_83d8dd2fe76b490797075db206da89cc);
+
+            
+        
+    
+
+            var marker_936369ba5ef24d00bfbfb2b747b0336b = L.marker(
+                [42.3506,-71.076],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_d045c262354a4aaa98465e1fc7d3d398 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_936369ba5ef24d00bfbfb2b747b0336b.setIcon(icon_d045c262354a4aaa98465e1fc7d3d398);
+            
+    
+            var popup_9a50d1fe096647838394bda010a56024 = L.popup({maxWidth: '300'});
+
+            
+                var html_67e28d7a7874453094e278ecad267757 = $('<div id="html_67e28d7a7874453094e278ecad267757" style="width: 100.0%; height: 100.0%;">Dig Inn, 557 Boylston Street, Boston 02116</div>')[0];
+                popup_9a50d1fe096647838394bda010a56024.setContent(html_67e28d7a7874453094e278ecad267757);
+            
+
+            marker_936369ba5ef24d00bfbfb2b747b0336b.bindPopup(popup_9a50d1fe096647838394bda010a56024);
+
+            
+        
+    
+
+            var marker_7120c937c0db4b9fbe7c0bc23a49a2df = L.marker(
+                [42.3739,-71.0392],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_6b9086c1c8fe4ea48380a57f1984da59 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7120c937c0db4b9fbe7c0bc23a49a2df.setIcon(icon_6b9086c1c8fe4ea48380a57f1984da59);
+            
+    
+            var popup_aea1afd534804ddd8f5956529493d7ea = L.popup({maxWidth: '300'});
+
+            
+                var html_69f3306cdeeb4aba94849a9e26b88b59 = $('<div id="html_69f3306cdeeb4aba94849a9e26b88b59" style="width: 100.0%; height: 100.0%;">La Hacienda, 150 Meridian St, Boston 02128</div>')[0];
+                popup_aea1afd534804ddd8f5956529493d7ea.setContent(html_69f3306cdeeb4aba94849a9e26b88b59);
+            
+
+            marker_7120c937c0db4b9fbe7c0bc23a49a2df.bindPopup(popup_aea1afd534804ddd8f5956529493d7ea);
+
+            
+        
+    
+
+            var marker_19d5280aaa8949cf853feae6d800f51f = L.marker(
+                [42.3499,-71.0786],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_8eb4c32cd84a4906a690c1d663e295ff = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_19d5280aaa8949cf853feae6d800f51f.setIcon(icon_8eb4c32cd84a4906a690c1d663e295ff);
+            
+    
+            var popup_98e4e99b2b9e4644bba8b3634c3e2fb8 = L.popup({maxWidth: '300'});
+
+            
+                var html_ef26f7fd351a44aa954340d8fbefb3cd = $('<div id="html_ef26f7fd351a44aa954340d8fbefb3cd" style="width: 100.0%; height: 100.0%;">sweetgreen, 659 Boylston Street 02116</div>')[0];
+                popup_98e4e99b2b9e4644bba8b3634c3e2fb8.setContent(html_ef26f7fd351a44aa954340d8fbefb3cd);
+            
+
+            marker_19d5280aaa8949cf853feae6d800f51f.bindPopup(popup_98e4e99b2b9e4644bba8b3634c3e2fb8);
+
+            
+        
+    
+
+            var marker_5623849065c34d13af56b098999fda29 = L.marker(
+                [42.3506,-71.0774],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_6c385a20d9d34013a4fb66d5b081c949 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5623849065c34d13af56b098999fda29.setIcon(icon_6c385a20d9d34013a4fb66d5b081c949);
+            
+    
+            var popup_d1282232a78649f4bcf80a22ec0f2dde = L.popup({maxWidth: '300'});
+
+            
+                var html_7788c9db41254ef6bde1f052acc6a255 = $('<div id="html_7788c9db41254ef6bde1f052acc6a255" style="width: 100.0%; height: 100.0%;">Lolita Cocina &amp; Tequila Bar, 271 Dartmouth Street, Boston 02116</div>')[0];
+                popup_d1282232a78649f4bcf80a22ec0f2dde.setContent(html_7788c9db41254ef6bde1f052acc6a255);
+            
+
+            marker_5623849065c34d13af56b098999fda29.bindPopup(popup_d1282232a78649f4bcf80a22ec0f2dde);
+
+            
+        
+    
+
+            var marker_8e5d6c3e8ac14dcba8298a0e129e5705 = L.marker(
+                [42.349,-71.0408],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_093a59ebfaf347ffbbcaef28fd26f63a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8e5d6c3e8ac14dcba8298a0e129e5705.setIcon(icon_093a59ebfaf347ffbbcaef28fd26f63a);
+            
+    
+            var popup_7c56e90174e84bf891442a248c9ef595 = L.popup({maxWidth: '300'});
+
+            
+                var html_7df0046e3bff4b7595dbbe7f96cac829 = $('<div id="html_7df0046e3bff4b7595dbbe7f96cac829" style="width: 100.0%; height: 100.0%;">Morton&#39;s The Steakhouse, 2 Seaport Lane 02210</div>')[0];
+                popup_7c56e90174e84bf891442a248c9ef595.setContent(html_7df0046e3bff4b7595dbbe7f96cac829);
+            
+
+            marker_8e5d6c3e8ac14dcba8298a0e129e5705.bindPopup(popup_7c56e90174e84bf891442a248c9ef595);
+
+            
+        
+    
+
+            var marker_c497f7c8bb794fbda3663f1e7ef654b7 = L.marker(
+                [42.3463,-71.0729],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_414af911b47d492ab07cdd5d8e95fc41 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c497f7c8bb794fbda3663f1e7ef654b7.setIcon(icon_414af911b47d492ab07cdd5d8e95fc41);
+            
+    
+            var popup_c4557808c838400694033dd790f0a780 = L.popup({maxWidth: '300'});
+
+            
+                var html_d74448898c49402cb5f8dd3be0a81728 = $('<div id="html_d74448898c49402cb5f8dd3be0a81728" style="width: 100.0%; height: 100.0%;">Delux Café &amp; Lounge, 100 Chandler Street, Boston 02116</div>')[0];
+                popup_c4557808c838400694033dd790f0a780.setContent(html_d74448898c49402cb5f8dd3be0a81728);
+            
+
+            marker_c497f7c8bb794fbda3663f1e7ef654b7.bindPopup(popup_c4557808c838400694033dd790f0a780);
+
+            
+        
+    
+
+            var marker_86965fc3c3634341b5caa7679a184144 = L.marker(
+                [42.3434,-71.0686],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_b95fc6e7eccc46ada5e382d749bed83e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_86965fc3c3634341b5caa7679a184144.setIcon(icon_b95fc6e7eccc46ada5e382d749bed83e);
+            
+    
+            var popup_836e898074e44ff597382cbc6fb69f00 = L.popup({maxWidth: '300'});
+
+            
+                var html_50c8c9a5972246079511f6cfc3ed6773 = $('<div id="html_50c8c9a5972246079511f6cfc3ed6773" style="width: 100.0%; height: 100.0%;">Coppa, 253 Shawmut Avenue, Boston 02118</div>')[0];
+                popup_836e898074e44ff597382cbc6fb69f00.setContent(html_50c8c9a5972246079511f6cfc3ed6773);
+            
+
+            marker_86965fc3c3634341b5caa7679a184144.bindPopup(popup_836e898074e44ff597382cbc6fb69f00);
+
+            
+        
+    
+
+            var marker_ecde97184e234aafaaaacdaf1fd7187e = L.marker(
+                [42.345,-71.0703],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_104998f9541f4dfebb883107cbd75521 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ecde97184e234aafaaaacdaf1fd7187e.setIcon(icon_104998f9541f4dfebb883107cbd75521);
+            
+    
+            var popup_e77851f8c66a4d3eaf47e8ae3626ff34 = L.popup({maxWidth: '300'});
+
+            
+                var html_324d5051149c43b68b35f3859bac1bb6 = $('<div id="html_324d5051149c43b68b35f3859bac1bb6" style="width: 100.0%; height: 100.0%;">Picco, 513 Tremont Street, Boston 02116</div>')[0];
+                popup_e77851f8c66a4d3eaf47e8ae3626ff34.setContent(html_324d5051149c43b68b35f3859bac1bb6);
+            
+
+            marker_ecde97184e234aafaaaacdaf1fd7187e.bindPopup(popup_e77851f8c66a4d3eaf47e8ae3626ff34);
+
+            
+        
+    
+
+            var marker_ab5a1819b245403eb420a685607eb075 = L.marker(
+                [42.3436,-71.0717],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_12f0f0d833f645cba77429a2130eefcd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ab5a1819b245403eb420a685607eb075.setIcon(icon_12f0f0d833f645cba77429a2130eefcd);
+            
+    
+            var popup_85aa9c110aea453ab1c94fb4fc25d691 = L.popup({maxWidth: '300'});
+
+            
+                var html_74a4e95d79884b018c8ccf5ace2eaba3 = $('<div id="html_74a4e95d79884b018c8ccf5ace2eaba3" style="width: 100.0%; height: 100.0%;">The Butcher Shop, 552 Tremont Street. 02118</div>')[0];
+                popup_85aa9c110aea453ab1c94fb4fc25d691.setContent(html_74a4e95d79884b018c8ccf5ace2eaba3);
+            
+
+            marker_ab5a1819b245403eb420a685607eb075.bindPopup(popup_85aa9c110aea453ab1c94fb4fc25d691);
+
+            
+        
+    
+
+            var marker_34fa62d17e954f7eabb5ef8725ea9025 = L.marker(
+                [42.3511,-71.0779],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_e7edc5585f96489e80c2caf697bd6146 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_34fa62d17e954f7eabb5ef8725ea9025.setIcon(icon_e7edc5585f96489e80c2caf697bd6146);
+            
+    
+            var popup_d0492081fc3243caaff25d6cacdbf8c4 = L.popup({maxWidth: '300'});
+
+            
+                var html_bc9c551002bd4d5ea73dee2b7225aeac = $('<div id="html_bc9c551002bd4d5ea73dee2b7225aeac" style="width: 100.0%; height: 100.0%;">Saltie Girl, 279 Dartmouth St, Boston 02116</div>')[0];
+                popup_d0492081fc3243caaff25d6cacdbf8c4.setContent(html_bc9c551002bd4d5ea73dee2b7225aeac);
+            
+
+            marker_34fa62d17e954f7eabb5ef8725ea9025.bindPopup(popup_d0492081fc3243caaff25d6cacdbf8c4);
+
+            
+        
+    
+
+            var marker_4406be9d9a5041febe4c0f9307b609c7 = L.marker(
+                [42.3441,-71.066],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_19accb7316bf4e69b8e865a0b601c3e8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4406be9d9a5041febe4c0f9307b609c7.setIcon(icon_19accb7316bf4e69b8e865a0b601c3e8);
+            
+    
+            var popup_2f813c723e674b428687a834604cec24 = L.popup({maxWidth: '300'});
+
+            
+                var html_25b09028d91f4c7886a1f11fe64ecf41 = $('<div id="html_25b09028d91f4c7886a1f11fe64ecf41" style="width: 100.0%; height: 100.0%;">Myers + Chang, 1145 Washington Street, Boston 02118</div>')[0];
+                popup_2f813c723e674b428687a834604cec24.setContent(html_25b09028d91f4c7886a1f11fe64ecf41);
+            
+
+            marker_4406be9d9a5041febe4c0f9307b609c7.bindPopup(popup_2f813c723e674b428687a834604cec24);
+
+            
+        
+    
+
+            var marker_d4e21fd1c51f408ca3b03ac01b24e3c9 = L.marker(
+                [42.373,-71.039],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_6511c4baf41049bfb87db7082e77fc65 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d4e21fd1c51f408ca3b03ac01b24e3c9.setIcon(icon_6511c4baf41049bfb87db7082e77fc65);
+            
+    
+            var popup_237ea7f6b90b416c919661ec71b3e64c = L.popup({maxWidth: '300'});
+
+            
+                var html_e5d0c0324c28417b9ce7797d79938229 = $('<div id="html_e5d0c0324c28417b9ce7797d79938229" style="width: 100.0%; height: 100.0%;">Meridian Food Market, 121 Meridian Street, Boston 02128</div>')[0];
+                popup_237ea7f6b90b416c919661ec71b3e64c.setContent(html_e5d0c0324c28417b9ce7797d79938229);
+            
+
+            marker_d4e21fd1c51f408ca3b03ac01b24e3c9.bindPopup(popup_237ea7f6b90b416c919661ec71b3e64c);
+
+            
+        
+    
+
+            var marker_f4f5ef054b6d42dd90e7fe874cdfbeee = L.marker(
+                [42.3434,-71.0662],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_b884098b49334c329a24f834e7952f29 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f4f5ef054b6d42dd90e7fe874cdfbeee.setIcon(icon_b884098b49334c329a24f834e7952f29);
+            
+    
+            var popup_ad7b0587fc9f4232a99b99e2c478165c = L.popup({maxWidth: '300'});
+
+            
+                var html_19f0b16795cb4af8b251239f415ac43e = $('<div id="html_19f0b16795cb4af8b251239f415ac43e" style="width: 100.0%; height: 100.0%;">Oishii Boston, 1166 Washington Street, Boston 02118</div>')[0];
+                popup_ad7b0587fc9f4232a99b99e2c478165c.setContent(html_19f0b16795cb4af8b251239f415ac43e);
+            
+
+            marker_f4f5ef054b6d42dd90e7fe874cdfbeee.bindPopup(popup_ad7b0587fc9f4232a99b99e2c478165c);
+
+            
+        
+    
+
+            var marker_66fe2326820745649928ecfa72412052 = L.marker(
+                [42.3727,-71.0353],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_cf1aefcf8011417ab353d1de3093bf7f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_66fe2326820745649928ecfa72412052.setIcon(icon_cf1aefcf8011417ab353d1de3093bf7f);
+            
+    
+            var popup_f0de41248ef44cbebbb10de564412eb0 = L.popup({maxWidth: '300'});
+
+            
+                var html_0ebdc3f9f8cb468cb92a7132e4c8ffbd = $('<div id="html_0ebdc3f9f8cb468cb92a7132e4c8ffbd" style="width: 100.0%; height: 100.0%;">Santarpio&#39;s Pizza, 111 Chelsea Street, Boston 02128</div>')[0];
+                popup_f0de41248ef44cbebbb10de564412eb0.setContent(html_0ebdc3f9f8cb468cb92a7132e4c8ffbd);
+            
+
+            marker_66fe2326820745649928ecfa72412052.bindPopup(popup_f0de41248ef44cbebbb10de564412eb0);
+
+            
+        
+    
+
+            var marker_42e722074e1d40a1b6b069df2a235022 = L.marker(
+                [42.3467,-71.0755],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_7edf046d5bdb4608b0f9f97a676348f0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_42e722074e1d40a1b6b069df2a235022.setIcon(icon_7edf046d5bdb4608b0f9f97a676348f0);
+            
+    
+            var popup_63c9896bf97f4c4daa2e2c8f217f5edf = L.popup({maxWidth: '300'});
+
+            
+                var html_a7d3624ca75741fb83f250936574e0a3 = $('<div id="html_a7d3624ca75741fb83f250936574e0a3" style="width: 100.0%; height: 100.0%;">Douzo, 131 Dartmouth Street, Boston 02116</div>')[0];
+                popup_63c9896bf97f4c4daa2e2c8f217f5edf.setContent(html_a7d3624ca75741fb83f250936574e0a3);
+            
+
+            marker_42e722074e1d40a1b6b069df2a235022.bindPopup(popup_63c9896bf97f4c4daa2e2c8f217f5edf);
+
+            
+        
+    
+
+            var marker_0b47f6d9b70c481aae3adba8855ebc57 = L.marker(
+                [42.3457,-71.0692],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_bb485990f9244ff290ce9067aa8c8ca6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0b47f6d9b70c481aae3adba8855ebc57.setIcon(icon_bb485990f9244ff290ce9067aa8c8ca6);
+            
+    
+            var popup_d99ccfb119ea46c7941696ab7e532a95 = L.popup({maxWidth: '300'});
+
+            
+                var html_c10844d1d7b74dffae29d31e642df225 = $('<div id="html_c10844d1d7b74dffae29d31e642df225" style="width: 100.0%; height: 100.0%;">Blackbird Doughnuts, 492 Tremont Street, Roxbury, Boston 02116</div>')[0];
+                popup_d99ccfb119ea46c7941696ab7e532a95.setContent(html_c10844d1d7b74dffae29d31e642df225);
+            
+
+            marker_0b47f6d9b70c481aae3adba8855ebc57.bindPopup(popup_d99ccfb119ea46c7941696ab7e532a95);
+
+            
+        
+    
+
+            var marker_587739e814514ae98fc64eccb53988f4 = L.marker(
+                [42.3431,-71.0687],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_3304e8b10df94b2ab20a8c20253cc4cc = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_587739e814514ae98fc64eccb53988f4.setIcon(icon_3304e8b10df94b2ab20a8c20253cc4cc);
+            
+    
+            var popup_48a3e8f83ec845ac86d70c53d760db60 = L.popup({maxWidth: '300'});
+
+            
+                var html_6f19a815c8b242f2bbc73fba5f394df9 = $('<div id="html_6f19a815c8b242f2bbc73fba5f394df9" style="width: 100.0%; height: 100.0%;">Formaggio Kitchen South End, 268 Shawmut Avenue, Boston 02118</div>')[0];
+                popup_48a3e8f83ec845ac86d70c53d760db60.setContent(html_6f19a815c8b242f2bbc73fba5f394df9);
+            
+
+            marker_587739e814514ae98fc64eccb53988f4.bindPopup(popup_48a3e8f83ec845ac86d70c53d760db60);
+
+            
+        
+    
+
+            var marker_05c4bc5b578c4b778a2147874f38f5b6 = L.marker(
+                [42.3411,-71.0541],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_5eeb0ce8ff764dfdbb0a8423935130f0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_05c4bc5b578c4b778a2147874f38f5b6.setIcon(icon_5eeb0ce8ff764dfdbb0a8423935130f0);
+            
+    
+            var popup_669db2fb0297459ab618088a2d60d8a1 = L.popup({maxWidth: '300'});
+
+            
+                var html_42a262a9da0b415bbd762d39a79bf185 = $('<div id="html_42a262a9da0b415bbd762d39a79bf185" style="width: 100.0%; height: 100.0%;">Rondos Sub Shop, 134 W Broadway, Boston 02127</div>')[0];
+                popup_669db2fb0297459ab618088a2d60d8a1.setContent(html_42a262a9da0b415bbd762d39a79bf185);
+            
+
+            marker_05c4bc5b578c4b778a2147874f38f5b6.bindPopup(popup_669db2fb0297459ab618088a2d60d8a1);
+
+            
+        
+    
+
+            var marker_8ab5d66e9c2249239bfc54a5e5da0c0d = L.marker(
+                [42.3424,-71.0704],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_2c88b51302314f0faa8910454e100cb4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8ab5d66e9c2249239bfc54a5e5da0c0d.setIcon(icon_2c88b51302314f0faa8910454e100cb4);
+            
+    
+            var popup_2f657c25536a4800af9effb937e15ab0 = L.popup({maxWidth: '300'});
+
+            
+                var html_e5744329cdb24fe3b2089e94afd03d1c = $('<div id="html_e5744329cdb24fe3b2089e94afd03d1c" style="width: 100.0%; height: 100.0%;">Kava Neo-Taverna, 315 Shawmut Avenue, Boston 02118</div>')[0];
+                popup_2f657c25536a4800af9effb937e15ab0.setContent(html_e5744329cdb24fe3b2089e94afd03d1c);
+            
+
+            marker_8ab5d66e9c2249239bfc54a5e5da0c0d.bindPopup(popup_2f657c25536a4800af9effb937e15ab0);
+
+            
+        
+    
+
+            var marker_0674d8322aec40ddae5960f614c60dc2 = L.marker(
+                [42.3489,-71.0385],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_1c3244ef7a014b9da9f17f0932f562a6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0674d8322aec40ddae5960f614c60dc2.setIcon(icon_1c3244ef7a014b9da9f17f0932f562a6);
+            
+    
+            var popup_d542d035235244f58b9f28393e270458 = L.popup({maxWidth: '300'});
+
+            
+                var html_f5c87290bfd74ddb82fa084c0b3df6ff = $('<div id="html_f5c87290bfd74ddb82fa084c0b3df6ff" style="width: 100.0%; height: 100.0%;">Del Frisco&#39;s Double Eagle Steakhouse, 250 Northern Avenue Suite 200 02210</div>')[0];
+                popup_d542d035235244f58b9f28393e270458.setContent(html_f5c87290bfd74ddb82fa084c0b3df6ff);
+            
+
+            marker_0674d8322aec40ddae5960f614c60dc2.bindPopup(popup_d542d035235244f58b9f28393e270458);
+
+            
+        
+    
+
+            var marker_d5b91caef82e4e4fa35d65831517dcff = L.marker(
+                [42.3495,-71.0831],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_400c824c25924943bd65c3a8d5ed8c83 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d5b91caef82e4e4fa35d65831517dcff.setIcon(icon_400c824c25924943bd65c3a8d5ed8c83);
+            
+    
+            var popup_5182b649bfb0463f85cd97b28d77c789 = L.popup({maxWidth: '300'});
+
+            
+                var html_29edbecc6d774ea2a482c82254003105 = $('<div id="html_29edbecc6d774ea2a482c82254003105" style="width: 100.0%; height: 100.0%;">Patisserie on Newbury, 257 Newbury Street 02116</div>')[0];
+                popup_5182b649bfb0463f85cd97b28d77c789.setContent(html_29edbecc6d774ea2a482c82254003105);
+            
+
+            marker_d5b91caef82e4e4fa35d65831517dcff.bindPopup(popup_5182b649bfb0463f85cd97b28d77c789);
+
+            
+        
+    
+
+            var marker_71b0e480b2e94b4b96592dada8870432 = L.marker(
+                [42.3421,-71.0705],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_c46ad06435d04767a5783c9062d2cd50 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_71b0e480b2e94b4b96592dada8870432.setIcon(icon_c46ad06435d04767a5783c9062d2cd50);
+            
+    
+            var popup_125ba5c98dc944a4a5fb03366f836fd6 = L.popup({maxWidth: '300'});
+
+            
+                var html_e5851391f8d44ba98dc6e815a2aba687 = $('<div id="html_e5851391f8d44ba98dc6e815a2aba687" style="width: 100.0%; height: 100.0%;">South End Buttery, 314 Shawmut Avenue 02118</div>')[0];
+                popup_125ba5c98dc944a4a5fb03366f836fd6.setContent(html_e5851391f8d44ba98dc6e815a2aba687);
+            
+
+            marker_71b0e480b2e94b4b96592dada8870432.bindPopup(popup_125ba5c98dc944a4a5fb03366f836fd6);
+
+            
+        
+    
+
+            var marker_8efd3989beaf4b97aa4352ba9d99eb76 = L.marker(
+                [42.344,-71.0778],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_dafeeb7c19604f32b183657dfa253648 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8efd3989beaf4b97aa4352ba9d99eb76.setIcon(icon_dafeeb7c19604f32b183657dfa253648);
+            
+    
+            var popup_82f37ac6d70043a383c4475c56759330 = L.popup({maxWidth: '300'});
+
+            
+                var html_78a2c5ac82094052a9874ed87ac8ef22 = $('<div id="html_78a2c5ac82094052a9874ed87ac8ef22" style="width: 100.0%; height: 100.0%;">Anchovies, 433 Columbus Avenue, Boston 02116</div>')[0];
+                popup_82f37ac6d70043a383c4475c56759330.setContent(html_78a2c5ac82094052a9874ed87ac8ef22);
+            
+
+            marker_8efd3989beaf4b97aa4352ba9d99eb76.bindPopup(popup_82f37ac6d70043a383c4475c56759330);
+
+            
+        
+    
+
+            var marker_fe3ccb08a8dc4c68bfc643811cca78f9 = L.marker(
+                [42.3498,-71.0828],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_6395b19287cb41c49a4c6a0a746797fd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fe3ccb08a8dc4c68bfc643811cca78f9.setIcon(icon_6395b19287cb41c49a4c6a0a746797fd);
+            
+    
+            var popup_45d9f3d8cdd14474a5c94b4408b4de34 = L.popup({maxWidth: '300'});
+
+            
+                var html_655f9a22ecc4428d8abd5b17ee2eb148 = $('<div id="html_655f9a22ecc4428d8abd5b17ee2eb148" style="width: 100.0%; height: 100.0%;">Amorino, 249 Newbury Street, Boston 02116</div>')[0];
+                popup_45d9f3d8cdd14474a5c94b4408b4de34.setContent(html_655f9a22ecc4428d8abd5b17ee2eb148);
+            
+
+            marker_fe3ccb08a8dc4c68bfc643811cca78f9.bindPopup(popup_45d9f3d8cdd14474a5c94b4408b4de34);
+
+            
+        
+    
+
+            var marker_5a35a6c477334ac8b28b37c9e37062de = L.marker(
+                [42.3411,-71.0704],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_0c943e5a83c34de49c370543d2d213c8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5a35a6c477334ac8b28b37c9e37062de.setIcon(icon_0c943e5a83c34de49c370543d2d213c8);
+            
+    
+            var popup_0ae0b8987c664d86bda51a57ece86596 = L.popup({maxWidth: '300'});
+
+            
+                var html_4fa2cdf1b0a44b6792cae4cbf73955a7 = $('<div id="html_4fa2cdf1b0a44b6792cae4cbf73955a7" style="width: 100.0%; height: 100.0%;">The Gallows, 1395 Washington Street, South End 02118</div>')[0];
+                popup_0ae0b8987c664d86bda51a57ece86596.setContent(html_4fa2cdf1b0a44b6792cae4cbf73955a7);
+            
+
+            marker_5a35a6c477334ac8b28b37c9e37062de.bindPopup(popup_0ae0b8987c664d86bda51a57ece86596);
+
+            
+        
+    
+
+            var marker_b2b3ac2cc98545fb95fb597c631f762b = L.marker(
+                [42.342,-71.0729],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_11364dbf3122481d9c523eb70520bce2 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b2b3ac2cc98545fb95fb597c631f762b.setIcon(icon_11364dbf3122481d9c523eb70520bce2);
+            
+    
+            var popup_4281c8038a714198ba7e87c302f7f681 = L.popup({maxWidth: '300'});
+
+            
+                var html_ee19c2cc1dc945d5b434c0000bfe90e5 = $('<div id="html_ee19c2cc1dc945d5b434c0000bfe90e5" style="width: 100.0%; height: 100.0%;">Vejigantes Restaurant, 57 W Dedham Street, Boston 02118</div>')[0];
+                popup_4281c8038a714198ba7e87c302f7f681.setContent(html_ee19c2cc1dc945d5b434c0000bfe90e5);
+            
+
+            marker_b2b3ac2cc98545fb95fb597c631f762b.bindPopup(popup_4281c8038a714198ba7e87c302f7f681);
+
+            
+        
+    
+
+            var marker_78d6da072dd14b61b8dee6f8264261d7 = L.marker(
+                [42.3489,-71.0825],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_5a3e1e9ce3c648898ee08cb1ab525982 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_78d6da072dd14b61b8dee6f8264261d7.setIcon(icon_5a3e1e9ce3c648898ee08cb1ab525982);
+            
+    
+            var popup_75dd963165de429a9e0bbc303d9d1798 = L.popup({maxWidth: '300'});
+
+            
+                var html_4e6b88a568fa4ef5bbb6e45cdaf602a5 = $('<div id="html_4e6b88a568fa4ef5bbb6e45cdaf602a5" style="width: 100.0%; height: 100.0%;">Chilli Duck, 829 Boylston Street, Boston 02116</div>')[0];
+                popup_75dd963165de429a9e0bbc303d9d1798.setContent(html_4e6b88a568fa4ef5bbb6e45cdaf602a5);
+            
+
+            marker_78d6da072dd14b61b8dee6f8264261d7.bindPopup(popup_75dd963165de429a9e0bbc303d9d1798);
+
+            
+        
+    
+
+            var marker_3440f563f665439b95ec2597dda73400 = L.marker(
+                [42.3397,-71.057],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_83e1efa0356a4d48830ee744d313aff2 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3440f563f665439b95ec2597dda73400.setIcon(icon_83e1efa0356a4d48830ee744d313aff2);
+            
+    
+            var popup_6f27bfe2dd7240d1b3003cb7b2e11ac2 = L.popup({maxWidth: '300'});
+
+            
+                var html_92cc670b5aee48aa90b488069520ccb8 = $('<div id="html_92cc670b5aee48aa90b488069520ccb8" style="width: 100.0%; height: 100.0%;">Doughboy Donuts &amp; Deli, 220 Dorchester Avenue, South Boston 02127</div>')[0];
+                popup_6f27bfe2dd7240d1b3003cb7b2e11ac2.setContent(html_92cc670b5aee48aa90b488069520ccb8);
+            
+
+            marker_3440f563f665439b95ec2597dda73400.bindPopup(popup_6f27bfe2dd7240d1b3003cb7b2e11ac2);
+
+            
+        
+    
+
+            var marker_eab3c779c5b442a7bdb7a597845255cb = L.marker(
+                [42.3398,-71.0725],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_159e2abf96fa41c8898046451d8b359a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_eab3c779c5b442a7bdb7a597845255cb.setIcon(icon_159e2abf96fa41c8898046451d8b359a);
+            
+    
+            var popup_47ee44c6cecb4b3493ac26906c8814e8 = L.popup({maxWidth: '300'});
+
+            
+                var html_95b5376e59b644e49b837fe86f11c825 = $('<div id="html_95b5376e59b644e49b837fe86f11c825" style="width: 100.0%; height: 100.0%;">Stella, 1525 Washington Street, Boston 02118</div>')[0];
+                popup_47ee44c6cecb4b3493ac26906c8814e8.setContent(html_95b5376e59b644e49b837fe86f11c825);
+            
+
+            marker_eab3c779c5b442a7bdb7a597845255cb.bindPopup(popup_47ee44c6cecb4b3493ac26906c8814e8);
+
+            
+        
+    
+
+            var marker_034bd1eeb448492487e7d2da912cec1c = L.marker(
+                [42.3486,-71.0841],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_c517ef2398ef432e92a28d219f1587f9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_034bd1eeb448492487e7d2da912cec1c.setIcon(icon_c517ef2398ef432e92a28d219f1587f9);
+            
+    
+            var popup_be96dc86e3b34d2d8f29cb0bc5193526 = L.popup({maxWidth: '300'});
+
+            
+                var html_2c7e613f4a3d4a73a9f067c0f0bdee48 = $('<div id="html_2c7e613f4a3d4a73a9f067c0f0bdee48" style="width: 100.0%; height: 100.0%;">Select Oyster Bar, 50 Gloucester Street, Boston 02115</div>')[0];
+                popup_be96dc86e3b34d2d8f29cb0bc5193526.setContent(html_2c7e613f4a3d4a73a9f067c0f0bdee48);
+            
+
+            marker_034bd1eeb448492487e7d2da912cec1c.bindPopup(popup_be96dc86e3b34d2d8f29cb0bc5193526);
+
+            
+        
+    
+
+            var marker_2526b6b1b9a740e6a8d039c776d3c56f = L.marker(
+                [42.3761,-71.0358],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_350b92afabd948de82cfa61a881d51fe = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2526b6b1b9a740e6a8d039c776d3c56f.setIcon(icon_350b92afabd948de82cfa61a881d51fe);
+            
+    
+            var popup_ce9e4d99285b4ded9a21c340f40ec59d = L.popup({maxWidth: '300'});
+
+            
+                var html_660936557f8d4124ac7eb5b22cc3962f = $('<div id="html_660936557f8d4124ac7eb5b22cc3962f" style="width: 100.0%; height: 100.0%;">Kelley Square Pub, 84 Bennington Street, Boston 02128</div>')[0];
+                popup_ce9e4d99285b4ded9a21c340f40ec59d.setContent(html_660936557f8d4124ac7eb5b22cc3962f);
+            
+
+            marker_2526b6b1b9a740e6a8d039c776d3c56f.bindPopup(popup_ce9e4d99285b4ded9a21c340f40ec59d);
+
+            
+        
+    
+
+            var marker_7836e431791a444493dbf44f736e5adc = L.marker(
+                [42.3421,-71.0799],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_4cdb84b7c2804d0785a6f54c976e1e89 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7836e431791a444493dbf44f736e5adc.setIcon(icon_4cdb84b7c2804d0785a6f54c976e1e89);
+            
+    
+            var popup_bfcfffd03c404dc9810868a56f9e264f = L.popup({maxWidth: '300'});
+
+            
+                var html_d51aeeb6e8f140d6bae71dcca29c76ac = $('<div id="html_d51aeeb6e8f140d6bae71dcca29c76ac" style="width: 100.0%; height: 100.0%;">Café Madeleine, 517 Columbus Avenue, Boston 02118</div>')[0];
+                popup_bfcfffd03c404dc9810868a56f9e264f.setContent(html_d51aeeb6e8f140d6bae71dcca29c76ac);
+            
+
+            marker_7836e431791a444493dbf44f736e5adc.bindPopup(popup_bfcfffd03c404dc9810868a56f9e264f);
+
+            
+        
+    
+
+            var marker_bd337ef4982c4891a2763453b556d1de = L.marker(
+                [42.336,-71.0471],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_5db609d5a5754138a206bc411ca57c3f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bd337ef4982c4891a2763453b556d1de.setIcon(icon_5db609d5a5754138a206bc411ca57c3f);
+            
+    
+            var popup_3fb94e9274c644bf9136ce9fbd6c3a73 = L.popup({maxWidth: '300'});
+
+            
+                var html_5020a603ad964f5ca9c62cb91ceaf843 = $('<div id="html_5020a603ad964f5ca9c62cb91ceaf843" style="width: 100.0%; height: 100.0%;">Capo, 443 West Broadway 02127</div>')[0];
+                popup_3fb94e9274c644bf9136ce9fbd6c3a73.setContent(html_5020a603ad964f5ca9c62cb91ceaf843);
+            
+
+            marker_bd337ef4982c4891a2763453b556d1de.bindPopup(popup_3fb94e9274c644bf9136ce9fbd6c3a73);
+
+            
+        
+    
+
+            var marker_4be1e2b72ab540328cf099dc4df6180c = L.marker(
+                [42.3386,-71.076],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_ec3b49e00b0d4c2bb1e9228d35845b7b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4be1e2b72ab540328cf099dc4df6180c.setIcon(icon_ec3b49e00b0d4c2bb1e9228d35845b7b);
+            
+    
+            var popup_1c821ed4eceb4e69a32697b7a844ca0d = L.popup({maxWidth: '300'});
+
+            
+                var html_d7f33580ee314fda882667db5bb41d54 = $('<div id="html_d7f33580ee314fda882667db5bb41d54" style="width: 100.0%; height: 100.0%;">El Centro, 472 Shawmut Avenue, Boston 02118</div>')[0];
+                popup_1c821ed4eceb4e69a32697b7a844ca0d.setContent(html_d7f33580ee314fda882667db5bb41d54);
+            
+
+            marker_4be1e2b72ab540328cf099dc4df6180c.bindPopup(popup_1c821ed4eceb4e69a32697b7a844ca0d);
+
+            
+        
+    
+
+            var marker_8e774376b7de482589af11ebf925754e = L.marker(
+                [42.3429,-71.0786],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_bb96e3ccf22040adbb8c5c40b2f8b35a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8e774376b7de482589af11ebf925754e.setIcon(icon_bb96e3ccf22040adbb8c5c40b2f8b35a);
+            
+    
+            var popup_b46d65249dbc4c23a4e4e4a7dc660d74 = L.popup({maxWidth: '300'});
+
+            
+                var html_95e00f0a18f14816a9b3839c93ce4997 = $('<div id="html_95e00f0a18f14816a9b3839c93ce4997" style="width: 100.0%; height: 100.0%;">Petit Robert Bistro, 480 Columbus Avenue, Boston 02118</div>')[0];
+                popup_b46d65249dbc4c23a4e4e4a7dc660d74.setContent(html_95e00f0a18f14816a9b3839c93ce4997);
+            
+
+            marker_8e774376b7de482589af11ebf925754e.bindPopup(popup_b46d65249dbc4c23a4e4e4a7dc660d74);
+
+            
+        
+    
+
+            var marker_4c64f48717ae47d1ae40e1bcc0afa11f = L.marker(
+                [42.3384,-71.0745],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_4be82089001c4632934aedce68321a94 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4c64f48717ae47d1ae40e1bcc0afa11f.setIcon(icon_4be82089001c4632934aedce68321a94);
+            
+    
+            var popup_10eebeadf308483eb5c0fe47c6370f55 = L.popup({maxWidth: '300'});
+
+            
+                var html_df4d721540ce45f0a502426d0f2b8e27 = $('<div id="html_df4d721540ce45f0a502426d0f2b8e27" style="width: 100.0%; height: 100.0%;">Flour Bakery &amp; Cafe, 1595 Washington Street 02118</div>')[0];
+                popup_10eebeadf308483eb5c0fe47c6370f55.setContent(html_df4d721540ce45f0a502426d0f2b8e27);
+            
+
+            marker_4c64f48717ae47d1ae40e1bcc0afa11f.bindPopup(popup_10eebeadf308483eb5c0fe47c6370f55);
+
+            
+        
+    
+
+            var marker_aedcc02c350f47fc889e8c261f942ed3 = L.marker(
+                [42.3719,-71.0876],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_73bfb966a26943d89f3a02ec9e0e7c1f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_aedcc02c350f47fc889e8c261f942ed3.setIcon(icon_73bfb966a26943d89f3a02ec9e0e7c1f);
+            
+    
+            var popup_8192b9c8060142d7801c0ea1dbeff903 = L.popup({maxWidth: '300'});
+
+            
+                var html_a7893bfaec314222aa67330ca08da756 = $('<div id="html_a7893bfaec314222aa67330ca08da756" style="width: 100.0%; height: 100.0%;">Loyal Nine, 660 Cambridge St, Cambridge 02141</div>')[0];
+                popup_8192b9c8060142d7801c0ea1dbeff903.setContent(html_a7893bfaec314222aa67330ca08da756);
+            
+
+            marker_aedcc02c350f47fc889e8c261f942ed3.bindPopup(popup_8192b9c8060142d7801c0ea1dbeff903);
+
+            
+        
+    
+
+            var marker_dd110bea09714ddc947542321fba53ff = L.marker(
+                [42.3494,-71.089],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_33750519020d4ad18e09ee0f1eaadf61 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dd110bea09714ddc947542321fba53ff.setIcon(icon_33750519020d4ad18e09ee0f1eaadf61);
+            
+    
+            var popup_f53bd8ec40a74de78d7777a1a0510930 = L.popup({maxWidth: '300'});
+
+            
+                var html_8c0fbd4662754430bd68fb41df5f9f83 = $('<div id="html_8c0fbd4662754430bd68fb41df5f9f83" style="width: 100.0%; height: 100.0%;">Deuxave, 371 Commonwealth Avenue 02115</div>')[0];
+                popup_f53bd8ec40a74de78d7777a1a0510930.setContent(html_8c0fbd4662754430bd68fb41df5f9f83);
+            
+
+            marker_dd110bea09714ddc947542321fba53ff.bindPopup(popup_f53bd8ec40a74de78d7777a1a0510930);
+
+            
+        
+    
+
+            var marker_52a3112261904ef79be6746c4b7860f7 = L.marker(
+                [42.3458,-71.0874],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_aa1eb2a1bb3843269215b2ac84d0b62d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_52a3112261904ef79be6746c4b7860f7.setIcon(icon_aa1eb2a1bb3843269215b2ac84d0b62d);
+            
+    
+            var popup_bcad5e0c819a492aba59ce08e8a06d88 = L.popup({maxWidth: '300'});
+
+            
+                var html_17ec5b7d35504b1084a8508167ee9253 = $('<div id="html_17ec5b7d35504b1084a8508167ee9253" style="width: 100.0%; height: 100.0%;">Pho Basil, 177 Massachusetts Avenue, Boston 02115</div>')[0];
+                popup_bcad5e0c819a492aba59ce08e8a06d88.setContent(html_17ec5b7d35504b1084a8508167ee9253);
+            
+
+            marker_52a3112261904ef79be6746c4b7860f7.bindPopup(popup_bcad5e0c819a492aba59ce08e8a06d88);
+
+            
+        
+    
+
+            var marker_e9a53169ca1c47b8973fe4ddf9608a36 = L.marker(
+                [42.3411,-71.0815],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_28ea8cf437764c7ebe0adb60aeb90717 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e9a53169ca1c47b8973fe4ddf9608a36.setIcon(icon_28ea8cf437764c7ebe0adb60aeb90717);
+            
+    
+            var popup_9d20942a6f974fca80961a7d67dc9451 = L.popup({maxWidth: '300'});
+
+            
+                var html_4ca36159758244b3b112b84a4a2b3a33 = $('<div id="html_4ca36159758244b3b112b84a4a2b3a33" style="width: 100.0%; height: 100.0%;">Render Coffee, 563 Columbus Avenue, Boston 02118</div>')[0];
+                popup_9d20942a6f974fca80961a7d67dc9451.setContent(html_4ca36159758244b3b112b84a4a2b3a33);
+            
+
+            marker_e9a53169ca1c47b8973fe4ddf9608a36.bindPopup(popup_9d20942a6f974fca80961a7d67dc9451);
+
+            
+        
+    
+
+            var marker_e79c881b8b8d43fab9a4735790e26095 = L.marker(
+                [42.3631,-71.0925],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_5e1c19c952d14b1490ee94455c07e23d);
+            
+    
+
+                var icon_4404af52475a4beeb5d16c258aae73a6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e79c881b8b8d43fab9a4735790e26095.setIcon(icon_4404af52475a4beeb5d16c258aae73a6);
+            
+    
+            var popup_2f984116a6524b26ae845811eadf19f9 = L.popup({maxWidth: '300'});
+
+            
+                var html_e11869b432ec49e0b8675e6eb3fd4a06 = $('<div id="html_e11869b432ec49e0b8675e6eb3fd4a06" style="width: 100.0%; height: 100.0%;">Area Four, 500 Technology Square 02139</div>')[0];
+                popup_2f984116a6524b26ae845811eadf19f9.setContent(html_e11869b432ec49e0b8675e6eb3fd4a06);
+            
+
+            marker_e79c881b8b8d43fab9a4735790e26095.bindPopup(popup_2f984116a6524b26ae845811eadf19f9);
+
+            
+        
+</script>
